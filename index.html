@@ -1,14 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>problem try korlam</title>
+    <title>API Related Assignment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/864c94abeb.js" crossorigin="anonymous"></script>
+    <style>
+        .top-right {
+            position: absolute;
+            top: 8px;
+            right: 16px;
+            background-color: tomato;
+            padding: 2px;
+            border-radius: 10px;
+            color: aliceblue;
+        }
+    </style>
 </head>
+
 <body>
-    <h2>
-        Github problem try korlam thik korar.
-    </h2>
+    <header>
+        <section>
+            <h2 class="text-center pt-3">AI Universe Hub</h2>
+
+            <div class="d-flex justify-content-center p-4">
+                <button type="button" class="btn btn-danger ">sort by date</button>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <!-- container card -->
+        <section class="container">
+            <div id="universe-container" class="row row-cols-1 row-cols-md-3 g-4">
+
+            </div>
+        </section>
+
+        <!-- button -->
+        <div class="d-flex justify-content-center p-4">
+            <button id="seeMoreBtn" type="button" class="btn btn-danger d-none">See More</button>
+        </div>
+
+        <!-- loader -->
+        <section id="loader" class="d-none">
+            <div style="height: 100px;" class="d-flex justify-content-center align-items-center">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- modal container  -->
+        <section>
+            <div class="modal fade" id="universeDetailModal" tabindex="-1" aria-labelledby="universeDetailModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="">
+                            <button type="button" class="btn-close text-light bg-danger rounded-5 top-right p-2" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                            <div id="universeDetailModal">
+                                <div class="row mx-3 my-5">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <div class="card">
+                                            <div id="cardPart1" class="card-body">
+                                                <div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <div class="card">
+                                            <div id="cardPart2" class="card-body">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- css fermwork Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!-- js File -->
+    <script src="js/app.js"></script>
 </body>
+
 </html>
